@@ -80,7 +80,7 @@ header {
 .contact__form h2,
 .studies__principal h2,
 .projects__principal h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #FFFFFF;
 }
 .social__networks{
@@ -216,7 +216,7 @@ input[type="submit"]:hover,
     flex-direction: column;
     border-radius: 15px;
     width: 100%;
-    margin-top: 1rem;
+    margin-top:2rem;
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     padding: 10px;
@@ -286,14 +286,14 @@ input[type="submit"] {
 }
 .button__message img{
     max-width:60px;
-    animation: mover 1.5s linear infinite;
+    animation: mover 0.5s linear infinite;
 }
 @keyframes mover {
     0% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
     100% {
         transform: translateY(0);
@@ -334,6 +334,7 @@ input[type="submit"] {
 .photo {
     max-width: 150px;
     margin-top: 1.5rem;
+    margin-right: 1.5rem;
 }
 .info h1 {
     font-size: 2rem;
@@ -393,7 +394,7 @@ input[type="submit"] {
     padding: 20px;
 }
 .project{
-    padding: 20px;
+    margin-top:3rem;
 }
 .project__button{
     margin-top: 1.5rem;
@@ -401,6 +402,49 @@ input[type="submit"] {
 .button__rep,
 .button__demo{
     font-size: 1.3rem;
+}
+/*-------------------------------------------------------------------------*/
+/*Form Container*/
+.contact__principal{
+    display: flex;
+    justify-content: center;
+}
+.contact__form {
+    padding: 1.5rem 1.5rem;
+    gap: 2rem;
+    width: 80%;
+}
+.contact__form h2,
+.studies__principal h2 {
+    text-align: center;
+}
+.contact__form p,
+.input__form{
+    font-size: 20px;
+}
+.button__message{
+    display: flex;
+    gap: 2rem; 
+}
+/*Button style*/
+input[type="submit"] {
+    width:200px ;
+    font-size: 20px;
+}
+.button__message img{
+    max-width:80px;
+    animation: mover 0.5s linear infinite;
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 }
 /*-------------------------------------------------------------------------*/
@@ -501,11 +545,6 @@ input[type="submit"] {
 }
 .project{
     max-width: 450px;
-}
-/*
-.button__rep,
-.button__demo{
-    width: 25%;
 }
 /*-------------------------------------------------------------------------*/
 /*Contact form*/
