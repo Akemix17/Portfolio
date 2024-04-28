@@ -449,6 +449,10 @@ input[type="submit"] {
 }
 /*-------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px){
+/*Global flexbox*/
+.container__principal{
+    gap: 3rem;
+}
 /*Menu options*/
 .menu__item {
     font-size: 20px;
@@ -457,13 +461,23 @@ input[type="submit"] {
 /*Photo and info*/
 .photo {
     max-width: 300px;
-    margin: 3rem 4rem ; 
+    height: auto;
+    margin: 2rem 2rem;
 }
 .info h1 {
-    font-size: 52px;
-    margin-left: 30px;
+    font-size: 50px;
 }
 /*-------------------------------------------------------------------------*/
+/*About me*/
+.about__me{
+    margin-top: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+.about__me p{
+    font-size: 30px;
+    text-align:center;
+}
 /*All h2*/
 .about__me h2,
 .skills__principal h2,
@@ -471,105 +485,104 @@ input[type="submit"] {
 .contact__form h2,
 .studies__principal h2,
 .projects__principal h2 {
-    font-size: 32px;
-    padding: 15px 0;
-}
-.about__me p{
-    font-size: 22px;
-    text-align: justify;
-    padding: 20px;
-}
-.about__me{
-    margin:  2rem 4rem;
+    font-size: 40px;
 }
 .social__networks{
-    margin: 1rem 4rem;
+    gap: 2rem;
 }
-
+.social__networks a{
+    font-size: 27px;
+    width: 30%;
+    padding: 1.5rem;
+}
 /*-------------------------------------------------------------------------*/
-/*Skills*/
+/*Skills & Hobbies*/
 .skills__principal,
 .hobbies__principal{
-    margin: 1rem 4rem;
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
+.skills__container,
+.hobbies__container,
+.studies__container{
+    gap: 3rem;
 }
 .skills{
-    width: 200px;
+    width: 150px;
+    padding:25px;
 }
 /*-------------------------------------------------------------------------*/
 /*Hobbies individual config*/
-.hobbies img{
-    width: 160px;
-    height: auto;
-}
 .hobbies p{
-    font-size: 30px;
+    font-size: 25px;
+}
+.hobbies img{
+    width: 100px;
 }
 .hobbies {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    padding:20px;
 }
 /*-------------------------------------------------------------------------*/
 /*Studies*/
-.studies__principal{
-    margin: 2rem 4rem ;
-    padding: 20px 0;
-}
 .studies img {
-    width: 140px;
+    width: 120px;
 }
 .studies {
-    width: 250px;
-    height: auto;
-    padding: 20px;
+    width: 300px;
+    padding:20px;
 }
 .studies__time{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    padding: 25px;
+    gap: 1rem;
 }
 .studies__time p{
-    padding: 0 0 10px 10px;
-    border-bottom: 3px solid #6b6a6a;
-    border-left: 3px solid #6b6a6a;
+    font-size: 18px;
 }
 /*-------------------------------------------------------------------------*/
 /*Proyects*/
 .projects__principal{
-    margin:4rem;
+    align-items: center;
 }
-.projects__container{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
-    justify-content: center;
+.projects__principal h2{
+    padding-top: 1rem ;
+}
+.project p{
+    font-size: 30px;
+    padding: 20px;
 }
 .project{
-    max-width: 450px;
+    width: 650px;
+    margin-top:3rem;
+    padding: 30px;
+}
+.project img {
+    max-width: 100%;
+}
+.project__button{
+    margin-top: 2rem;
 }
 /*-------------------------------------------------------------------------*/
-/*Contact form*/
-.contact__form{
-    max-width: 70%;
+/*Form Container*/
+.contact__form {
+    width: 50%;
 }
-.contact__principal{
+/*Inputs style*/
+.input__form{
+    padding: 5px;
+}
+.button__message{
     display: flex;
-    justify-content:  center;
-    align-items:center;
+    gap: 2rem;
 }
-.message__animation {
-    max-width: 250px;
-    max-height: 250px;
-    animation: mover 2s linear infinite;
+/*Button style*/
+input[type="submit"] {
+    width:200px ;
+    font-size: 18px;
 }
-@keyframes mover {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(50px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.button__message img{
+    max-width:80px;
+    animation: mover 0.7s linear infinite;
 }
 }
